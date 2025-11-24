@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(71, 83, 100, 0.621), rgb(25, 50, 78));
+}
+
+.container{
+    border:2px solid;
+    max-width: 70%;
+    padding: 22px 27px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px 5px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
+    border-bottom: 3px solid silver;
+}
+
+.content
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2px 0;
+}
+
+.input_box
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.input_box label
+{
+    padding-right: 6px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 0px;
+}
+
+.input_box input{
+    height: 19px;
+    border: 0.5px solid silver;
+    outline: none;
+    border-radius: 3px;
+}
+
+.radio
+{
+    color: rgb(255, 255, 255);
+    font-weight: bold;  
+}
+
+.radio label{
+    padding: 0 5px 0 0px;
+}
+
+.radio input{
+    padding: 0 5px 0 0;
+    cursor: pointer;
+}
+
+#submit_button
+{
+    margin: 15px 0;
+}
+
+#submit_button button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+
+    display: block;
+
+    font-size: 15px;
+    color: white;
+    
+    border: none;
+    border-radius: 5px;
+
+    background-image: linear-gradient(to right, rgb(86, 99, 156), rgb(24, 54, 77)) ;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#submit_button button:hover{
+    background-image: linear-gradient(to left, rgb(86, 99, 156), rgb(24, 54, 77));
+}
+
+@media(max-width: 70%)
+{
+    .container{
+        min-width: 50%;
+    } 
+    .content{
+        min-width: 50%;
+        overflow: auto;
+    }
+    .input_box{
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    .input_box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .radio
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+
+    .content::-webkit-scrollbar
+    {
+        width: 0;
+    }
+
+}

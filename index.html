@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h2>Accreditation Scheme Application</h2><br>
+            <div class="content"></div>
+                <div class="input_box">
+                    <label for="scheme_requested">Accreditation Scheme Requested:</label>
+                    <select id="scheme_requested">
+                        <option value="ISO 17025">ISO 17025</option>
+                        <option value="ISE 17025">ISO 17025</option>
+                        <option value="ISO 17020">ISO 17025</option>
+                        <option value="ISE 17025">ISO 17025</option>
+                        <option value="ISO 17065">ISO 17025</option>
+                        <option value="ISE 17025">ISO 17025</option>
+                    </select>
+                </div><br>
+                
+                <div class="input_box">
+                    <label for="scheme_ref">Scheme Reference:</label>
+                    <input type="text" id="scheme_ref" name="scheme_ref" required>
+                </div><br>
+
+                <div class="input_box">
+                    <label for="accreditation_scope">Scope of Accreditation:</label>
+                    <br>
+                    <textarea id="accreditation_scope" placeholder="detailed description of sevices, processes or products covered under the scheme"></textarea>
+                </div><br>
+
+                <div class="input_box">
+                    <label for="quality_file_upload">Quality Manual Upload & Audit Records:</label>
+                    <input type="file" id="quality_file_upload" name="quality_file_upload" required>
+                </div><br>
+
+                <div class="radio">
+                    <label id="existing_accreditaion">Existing Accreditation:</label>
+                    <label for="Yes">Yes</label>
+                    <input type="radio" id="Yes" value="Yes" name="existing_accreditaion"required>
+                    <label for="No">No</label>
+                    <input type="radio" id="No" value="No" name="existing_accreditaion"  required>
+                </div><br>
+
+                <div class="input_box">
+                    <label for="accreditation_body">Accreditation Body Name <i>(If applicable)</i> :</label>
+                    <input type="text" id="accreditation_body" name="accreditation_body" >
+                </div><br>
+
+                <div class="input_box">
+                    <label for="cert_no">Certification Number and Validity: </label>
+                    <input type="text" id="cert_no" name="cert_no" required>
+                    <input type="date">
+                </div><br>
+
+                <div class="input_box">
+                    <label for="assessment">Assessment Location and Date: </label>
+                    <input type="text" id="assessment" name="assessment" required>
+                    <input type="date">
+                </div><br>
+
+                <div class="input_box">
+                    <label for="scheme_docs">Scheme Specific Documents Upload:</label>
+                    <input type="file" id="scheme_docs">
+                </div><br>
+
+                <div class="input_box">
+                    <label for="legal_docs">Legal Regulatory Approvals:</label>
+                    <input type="file" id="legal_docs">
+                </div><br>
+
+                <div id="submit_button">
+                    <button>Submit</button>
+                </div>
+                
+        </form>
+    </div>
+</body>
+</html>
